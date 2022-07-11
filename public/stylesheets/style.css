@@ -1,0 +1,78 @@
+:root {
+    --color-1: rgb(200, 200, 200);
+    --color-2: rgb(255, 255, 255, 0.85);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+#quote-container {
+    width: 50vw;
+    background-color: var(--color-2);
+    border-radius: 20px;
+    padding: 6vh 4vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto auto auto;
+    align-items: center;
+    gap: 6vh;
+}
+
+.quote-content {
+    text-align: center;
+    font-size: 35px;
+}
+
+.button {
+    background-color: var(--color-1);
+    font-size: 20px;
+    width: 33%;
+    text-align: center;
+    padding: 10px 15px;
+    color: var(--color-2);
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0, 0.85) 3px 3px;
+}
+
+
+@media (max-device-width: 600px) {
+    #quote-container {
+        margin: 10vh auto auto auto;
+        gap: 4vh;
+        padding: 4vh 3vh;
+    }
+
+    .quote-content {
+        font-size: 50px;
+    }
+
+    .button {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+@media (min-device-width: 600px) and (max-device-width: 1200px) {
+    #quote-container {
+        margin: 20vh 25vw auto 25vw;
+        gap: 5vh;
+        padding: 5vh 3vh;
+    }
+
+    .quote-content {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 20px;
+        width: 50%;
+    }
+}
