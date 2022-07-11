@@ -1,3 +1,4 @@
+// dataset containing data source URLS and the names of data extraction methods
 const quoteData = [{
     url: 'https://dog-api.kinduff.com/api/facts?number=1', parser: 'extract1'
 }, {

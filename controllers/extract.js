@@ -1,3 +1,5 @@
+// contains various data processing methods applied on the data fetched as per the data source
+
 exports.extract1 = (data) => {
     return data['facts'][0]
 }
